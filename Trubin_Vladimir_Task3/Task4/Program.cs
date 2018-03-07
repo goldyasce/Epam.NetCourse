@@ -14,20 +14,22 @@ namespace Task4
             string str = "";
             StringBuilder sb = new StringBuilder();
             Stopwatch w = new Stopwatch();
-            int N = 100;
+            int n = 100;
             w.Start();
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < n; i++)
             {
                 str += "*";
             }
+
             w.Stop();
             Console.WriteLine($"String: {w.Elapsed.TotalMilliseconds}");
             w.Reset();
             w.Start();
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < n; i++)
             {
                 sb.Append("*");
             }
+
             w.Stop();
             Console.WriteLine($"StringBuilder: {w.Elapsed.TotalMilliseconds}");
 

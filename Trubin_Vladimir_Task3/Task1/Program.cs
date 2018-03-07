@@ -20,29 +20,23 @@ namespace Task1
         {
             int nchars = 0;
             int nwords = 0;
-            char[] punct = new char[line.Length];
-            int j = 0;
+            var punct = new List<char>();
             for (int i = 0; i < line.Length; i++)
             {
                 if (!Char.IsLetter(line[i]))
                 {
-                    punct[j] = line[i];
-                    j++;
+                    punct.Add(line[i]);
                 }
             }
-            string[] substr = line.Split(punct, StringSplitOptions.RemoveEmptyEntries);
-            string newstr = string.Join(" ", substr);
-            for (int i = 0; i < newstr.Length; i++)
+            string[] substr = line.Split(punct.ToArray(), StringSplitOptions.RemoveEmptyEntries);
+            int countOfWords = substr.Length;
+            int charCount = 0;
+            for (int i = 0; i < substr.Length; i++)
             {
-                if (!(newstr[i] == ' '))
-                {
-                    nchars += 1;
-                }
-                else
-                {
-                    nwords++;
-                }
+                var word = substr[i];
+                charCount += word.Length;
             }
+
             nwords += 1;
             int avg = nchars / nwords;
 

@@ -13,13 +13,7 @@ namespace Task7
         {
             Console.Write("Enter text with time: ");
             string number = Console.ReadLine();
-            const string regex = "([01]?[0-9]|2[0-3]):[0-5][0-9]";
-            int counter = 0;
-            MatchCollection match1 = Regex.Matches(number, regex);
-            foreach (Match m in match1)
-            {
-                counter++;
-            }
+            int counter = Regex.Matches(number, "(^|\\b)([0-1][0-9]:[0-5][0-9])|([2][0-3]:[0-5][0-9])|([0-9]:[0-5][0-9])\b").Count;
             Console.WriteLine($"Время встречается {counter} раз.");
 
             Console.ReadKey();

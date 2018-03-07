@@ -31,21 +31,17 @@ namespace Task2
                 new_line += chars.ToString();
                 char_list.Add(chars);
             }
+
             return new_line;
         }
         static string DoubleChar(string first_line, string second_unique)
         {
             for (int j = 0; j < second_unique.Length; j++)
             {
-                for (int i = 0; i < first_line.Length; i++)
-                {
-                    if (first_line[i] == second_unique[j])
-                    {
-                        first_line = first_line.Insert(i, second_unique[j].ToString());
-                        i++;
-                    }
-                }
+                var c = second_unique[j];
+                first_line = first_line.Replace(c.ToString(), new string(c, 2));
             }
+
             return first_line;
         }
     }
