@@ -1,0 +1,17 @@
+﻿Построение начато 12.02.2018 19:19:31.
+Проект "\\ws210-\incoming\545\стз\Stend\Plugins\Source\My\My\My.vcxproj" в узле 2 (целевые объекты build).
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: каталог Output заканчивается не косой чертой.  Этот экземпляр построения добавит косую черту, поскольку она необходима для правильного определения каталога Output.
+InitializeBuildStatus:
+  Обращение к "Debug\My.unsuccessfulbuild".
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _DLLEXPORT_ /D _USRDLL /D MY_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /FA /Fa"Debug\\" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+  Пропуск... (изменения не обнаружены)
+  dllmain.cpp
+Link:
+  C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\545\стз\Stend\Plugins\My.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"list.def" /MANIFEST:NO /DEBUG /PDB:"D:\Users\545\стз\Stend\Plugins\My.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\545\стз\Stend\Plugins\My.lib" /MACHINE:X86 /DLL Debug\dllmain.obj
+LINK : fatal error LNK1104: не удается открыть файл "D:\Users\545\стз\Stend\Plugins\My.dll"
+Построение проекта "\\ws210-\incoming\545\стз\Stend\Plugins\Source\My\My\My.vcxproj" завершено (целевые объекты build) с ошибкой.
+
+СБОЙ построения.
+
+Затраченное время: 00:00:04.56

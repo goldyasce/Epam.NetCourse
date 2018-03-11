@@ -1,0 +1,8 @@
+LIBRARY
+
+EXPORTS
+        inversion                        @1   ; inversion
+
+
+        inversion = _inversion
+
